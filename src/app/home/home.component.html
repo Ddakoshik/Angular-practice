@@ -2,9 +2,9 @@
 <ul class="heroes">
   <li *ngFor="let hero of heroes"
       [class.selected]="hero === selectedHero" 
-      (click)="onSelect(hero)">
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
+      (click)="onSelect(hero)" class="heroLi">
+    <span class="badge">{{hero.id}}</span> {{hero.name}} <span class="statusEnd"> {{hero.status}}</span>
   </li>
 </ul>
 
-<app-tasks [hero]="selectedHero"></app-tasks>
+<!-- <app-tasks [hero]="selectedHero" [msg]="masage" ></app-tasks> -->

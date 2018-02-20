@@ -9,6 +9,7 @@ import { Hero } from '../hero';
 
 export class TasksComponent implements OnInit {
   @Input() hero: Hero;
+  @Input() msg: string;
 
   constructor() { }
 

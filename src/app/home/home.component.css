@@ -46,3 +46,14 @@
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
   }
+  .statusEnd{ 
+    color: red; 
+    text-align: right; 
+    padding-right: 10px;
+  }
+  .heroLi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
