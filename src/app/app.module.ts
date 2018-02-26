@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { MaterialModule } from './material.module';
+import { HeroService } from './hero.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MaterialModule } from './material.module';
     BrowserAnimationsModule
 
   ],
-  providers: [],
+  providers: [
+    HeroService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
