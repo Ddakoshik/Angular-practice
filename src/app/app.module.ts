@@ -1,30 +1,38 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule} from '@angular/forms';
 import { NgModule } from '@angular/core';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { TasksComponent } from './tasks/tasks.component';
-import { MaterialModule } from './material.module';
+import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { MaterialModule } from './shared/material.module';
 import { HeroService } from './hero.service';
+import { MessageService } from './message.service';
+import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    TasksComponent,
+    HeroesComponent,
+    HeroDetailComponent,
+    MessagesComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     MaterialModule,
-    BrowserAnimationsModule
-
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [
-    HeroService],
+    HeroService,
+    MessageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
