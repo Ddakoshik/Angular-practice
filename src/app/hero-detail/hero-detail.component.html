@@ -8,19 +8,6 @@
     </label>
   </div>
 
-  <mat-card>
-      <mat-card-content>
-          <section class="example-section">
-          <label class="example-margin">Align:</label>
-          <mat-radio-group [(ngModel)]="hero.status">
-              <mat-radio-button class="example-margin" value="start">Start</mat-radio-button>
-              <mat-radio-button class="example-margin" value="end">End</mat-radio-button>
-          </mat-radio-group>
-          </section>
-      </mat-card-content>
-  </mat-card>
-
-  {{align}}
-  Say {{msg}}
+  <button (click)="goBack()">go back</button>
 
 </div>
